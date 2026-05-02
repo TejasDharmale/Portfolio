@@ -1,0 +1,46 @@
+[
+  {
+    "role": "Software Developer",
+    "org": "Warrior's Legacy Care · Internship",
+    "period": "May 2025 - Oct 2025",
+    "summary": "6 mos · Washington, United States · On-site · Developed and maintained software solutions for a veteran care platform.",
+    "highlights": [],
+    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1400&q=80"
+  },
+  {
+    "role": "Research Assistant",
+    "org": "UMBC - NASA GESTAR II Lab",
+    "period": "2023 - Present",
+    "summary": "Designed geospatial and AI workflows that reduced manual preprocessing and improved analysis speed for environmental data programs.",
+    "highlights": [
+      "Built automation pipeline that cut manual preparation time by 40%",
+      "Identified environmental anomalies valued at $14K from satellite imagery",
+      "Contributed to LLM label-adherence and AI education research"
+    ],
+    "image": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1400&q=80"
+  },
+  {
+    "role": "Graduate Teaching Assistant",
+    "org": "University of Maryland, Baltimore County",
+    "period": "2023 - Present",
+    "summary": "Supported undergraduate and graduate students in programming, cloud, and data mining with practical labs and technical reviews.",
+    "highlights": [
+      "Led lab problem-solving sessions for multiple cohorts",
+      "Provided assignment feedback focused on production coding quality",
+      "Improved student delivery speed in cloud and scripting modules"
+    ],
+    "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80"
+  },
+  {
+    "role": "Research and Solution Architect",
+    "org": "Orb Connect · Full-time",
+    "period": "May 2022 - Jul 2024",
+    "summary": "2 yrs 3 mos · Architected AI-enabled routing and analytics solutions with microservices and geospatial modeling.",
+    "highlights": [
+      "Designed AI postal-code routing platform",
+      "Integrated Flask services with geospatial intelligence",
+      "Worked across networking and application layers"
+    ],
+    "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1400&q=80"
+  }
+]

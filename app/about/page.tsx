@@ -1,23 +1,24 @@
 import Image from "next/image";
-import { profile } from "@/lib/data";
-import heroImage from "../assest/image2.png";
 import { MapPin, Mail, ExternalLink } from "lucide-react";
 import Link from "next/link";
+import { getProfile } from "@/lib/content";
 
-const stats = [
-  { label: "PhD Program", value: "Computer Science", sub: "UMBC, 2023 – Present" },
-  { label: "Research Focus", value: "Generative AI", sub: "NASA GESTAR II Lab" },
-  { label: "Publications", value: "3+", sub: "IEEE & IJRASET" },
-  { label: "Experience", value: "5+ Roles", sub: "Research & Industry" },
-];
+export default async function AboutPage() {
+  const profile = await getProfile();
 
-const traits = [
-  { title: "Research-Driven", body: "I publish and experiment at the intersection of AI, education, and geospatial intelligence." },
-  { title: "Production-Minded", body: "I architect real systems — not just prototypes — with scalability and reliability in mind." },
-  { title: "Impact-Focused", body: "Every project has a measurable outcome: a pipeline, a paper, or a deployment." },
-];
+  const stats = [
+    { label: "PhD Program", value: "Computer Science", sub: "UMBC, 2024 – Present" },
+    { label: "Research Focus", value: "Generative AI", sub: "NASA GESTAR II Lab" },
+    { label: "Publications", value: "3+", sub: "IEEE & IJRASET" },
+    { label: "Experience", value: "5+ Roles", sub: "Research & Industry" },
+  ];
 
-export default function AboutPage() {
+  const traits = [
+    { title: "Research-Driven", body: "I publish and experiment at the intersection of AI, education, and geospatial intelligence." },
+    { title: "Production-Minded", body: "I architect real systems — not just prototypes — with scalability and reliability in mind." },
+    { title: "Impact-Focused", body: "Every project has a measurable outcome: a pipeline, a paper, or a deployment." },
+  ];
+
   return (
     <div className="about-page">
 
@@ -25,22 +26,20 @@ export default function AboutPage() {
       <section className="about-hero reveal">
         <div className="about-photo-wrap">
           <Image
-            src={heroImage}
-            alt="Srushti Dharmale"
+            src={profile.aboutImage}
+            alt={profile.name}
             fill
             priority
             style={{ objectFit: "cover", objectPosition: "top center" }}
+            sizes="(max-width: 850px) 100vw, 40vw"
           />
         </div>
 
         <div className="about-intro">
           <p className="eyebrow">About Me</p>
-          <h1 className="about-name">Srushti Dharmale</h1>
+          <h1 className="about-name">{profile.name}</h1>
           <p className="about-role">PhD Researcher · AI Engineer · Builder</p>
-          <p className="muted about-bio">
-            I build research-grade AI systems and production-ready software for education,
-            geospatial intelligence, and applied machine learning.
-          </p>
+          <p className="muted about-bio">{profile.tagline}</p>
           <div className="about-meta-row">
             <span className="about-meta-item"><MapPin size={13} /> {profile.location}</span>
             <span className="about-meta-item"><Mail size={13} /> {profile.email}</span>

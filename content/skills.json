@@ -1,0 +1,22 @@
+[
+  {
+    "title": "AI and Machine Learning",
+    "icon": "BrainCircuit",
+    "items": ["PyTorch", "TensorFlow", "Scikit-learn", "LLMs", "Transformers", "Computer Vision"]
+  },
+  {
+    "title": "Languages",
+    "icon": "Cpu",
+    "items": ["Python", "TypeScript", "JavaScript", "Swift", "R", "Java", "C++"]
+  },
+  {
+    "title": "Web and APIs",
+    "icon": "Workflow",
+    "items": ["FastAPI", "Flask", "Next.js", "React", "REST APIs", "WebSockets"]
+  },
+  {
+    "title": "Cloud and Data",
+    "icon": "Cloud",
+    "items": ["Docker", "Kubernetes", "PostgreSQL", "Redis", "SQLite", "Grafana"]
+  }
+]

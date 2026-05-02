@@ -1,7 +1,10 @@
 import PageIntro from "@/components/PageIntro";
-import { skills } from "@/lib/data";
+import { getSkillGroups } from "@/lib/content";
+import SkillGrid from "@/components/SkillGrid";
 
-export default function SkillsPage() {
+export default async function SkillsPage() {
+  const groups = await getSkillGroups();
+
   return (
     <>
       <PageIntro
@@ -9,27 +12,7 @@ export default function SkillsPage() {
         title="Technical toolkit"
         description="Engineering and research capabilities grouped by execution area."
       />
-
-      <section className="skill-grid reveal delay-1">
-        {skills.map((group) => {
-          const Icon = group.icon;
-          return (
-            <article className="skill-card" key={group.title}>
-              <span className="icon-badge">
-                <Icon size={18} />
-              </span>
-              <h3>{group.title}</h3>
-              <div>
-                {group.items.map((item) => (
-                  <span className="tag" key={item}>
-                    {item}
-                  </span>
-                ))}
-              </div>
-            </article>
-          );
-        })}
-      </section>
+      <SkillGrid groups={groups} />
     </>
   );
 }

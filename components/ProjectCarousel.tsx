@@ -4,9 +4,9 @@ import { useRef, useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
-import { projects } from "@/lib/data";
+import type { ProjectItem } from "@/lib/data";
 
-export default function ProjectCarousel() {
+export default function ProjectCarousel({ projects }: { projects: ProjectItem[] }) {
   const trackRef = useRef<HTMLDivElement>(null);
   const posRef = useRef(0);
   const pausedRef = useRef(false);

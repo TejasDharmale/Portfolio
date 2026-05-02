@@ -1,0 +1,33 @@
+[
+  {
+    "institution": "University of Maryland, Baltimore County",
+    "degree": "PhD in Computer Science",
+    "location": "Baltimore, Maryland",
+    "period": "2024 - Present",
+    "highlights": []
+  },
+  {
+    "institution": "University of Maryland, Baltimore County",
+    "degree": "MS in Computer Science",
+    "location": "Baltimore, Maryland",
+    "period": "2024 - 2026",
+    "highlights": []
+  },
+  {
+    "institution": "Trinity Academy of Engineering (SPPU)",
+    "degree": "Bachelor of Engineering in Computer Science",
+    "location": "Pune, India",
+    "period": "2019 - 2023",
+    "highlights": [
+      "Published first research paper at age 20",
+      "Built projects across AI, web, and mobile engineering"
+    ]
+  },
+  {
+    "institution": "Marathwada Mitra Mandal's Polytechnic",
+    "degree": "Diploma in Computer Engineering",
+    "location": "Pune, India",
+    "period": "2017 - 2019",
+    "highlights": ["Strong systems and programming foundation"]
+  }
+]

@@ -1,8 +1,10 @@
 import Link from "next/link";
 import PageIntro from "@/components/PageIntro";
-import { profile } from "@/lib/data";
+import { getProfile } from "@/lib/content";
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const profile = await getProfile();
+
   return (
     <>
       <PageIntro

@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Exploring the Impact of ChatGPT on Early Information Systems Majors: Opportunities and Challenges in Learning to Program",
+    "venue": "IEEE Frontiers in Education Conference",
+    "year": 2025,
+    "authors": ["U. Hasan", "O.N. Owoeye", "S.R. Dharmale"],
+    "kind": "Conference Paper",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11328626"
+  },
+  {
+    "title": "Do LLMs Adhere to Label Definitions? Examining Their Receptivity to External Label Definitions",
+    "venue": "COEIT Research Day, UMBC",
+    "year": 2025,
+    "authors": [
+      "S. Mohammadi",
+      "B.H. Vedula",
+      "S.R. Dharmale",
+      "H. Lamba",
+      "E. Raff",
+      "P. Kumaraguru",
+      "F. Ferraro",
+      "M. Gaur"
+    ],
+    "kind": "Conference Presentation",
+    "url": "https://coeit.umbc.edu/2025-talks-poster-sessions/"
+  },
+  {
+    "title": "Advanced Driver Assistance System: A Comprehensive Review of Lane Detection",
+    "venue": "International Journal for Research in Applied Science and Engineering Technology",
+    "year": 2023,
+    "authors": ["P. Shivale", "N. Sonawane", "S. Dharmale", "T. Lokhandwala", "M.B. Wagh"],
+    "kind": "Journal Paper",
+    "url": "https://www.ijraset.com/research-paper/advanced-driver-assistance-system"
+  }
+]

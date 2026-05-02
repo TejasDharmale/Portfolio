@@ -1,43 +1,48 @@
 import Image from "next/image";
 import PageIntro from "@/components/PageIntro";
-import { recommendation } from "@/lib/data";
-import recommendationPersonImage from "../assest/image.png";
+import { getRecommendations } from "@/lib/content";
 
-export default function RecommendationsPage() {
+export default async function RecommendationsPage() {
+  const recommendations = await getRecommendations();
+
   return (
     <>
       <PageIntro
         eyebrow="Recommendations"
-        title="Received recommendation"
-        description="Recommend Srushti | Received (1) | Given"
+        title="Received recommendations"
+        description="Recommend Srushti | Received | Given"
       />
 
       <section className="reco-card reveal delay-1">
-        <div className="panel">
-          <div className="reco-head">
-            <Image
-              src={recommendationPersonImage}
-              alt={recommendation.recommender}
-              width={74}
-              height={74}
-              className="avatar"
-            />
-            <div>
-              <h3>{recommendation.recommender}</h3>
-              <p className="muted">{recommendation.title}</p>
-              <p className="muted">1st</p>
+        {recommendations.map((rec) => (
+          <div key={rec.recommender}>
+            <div className="panel">
+              <div className="reco-head">
+                <Image
+                  src={rec.image}
+                  alt={rec.recommender}
+                  width={74}
+                  height={74}
+                  className="avatar"
+                />
+                <div>
+                  <h3>{rec.recommender}</h3>
+                  <p className="muted">{rec.title}</p>
+                  <p className="muted">1st</p>
+                </div>
+              </div>
+              <p className="muted" style={{ marginTop: "0.8rem" }}>
+                {rec.relationship}
+              </p>
             </div>
-          </div>
-          <p className="muted" style={{ marginTop: "0.8rem" }}>
-            {recommendation.relationship}
-          </p>
-        </div>
 
-        <article className="panel">
-          <h3>Recommendation</h3>
-          <p className="muted">{recommendation.body}</p>
-          <p>{recommendation.note}</p>
-        </article>
+            <article className="panel">
+              <h3>Recommendation</h3>
+              <p className="muted">{rec.body}</p>
+              <p>{rec.note}</p>
+            </article>
+          </div>
+        ))}
       </section>
     </>
   );

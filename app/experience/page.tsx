@@ -1,7 +1,9 @@
 import PageIntro from "@/components/PageIntro";
-import { experience } from "@/lib/data";
+import { getExperience } from "@/lib/content";
 
-export default function ExperiencePage() {
+export default async function ExperiencePage() {
+  const experience = await getExperience();
+
   return (
     <>
       <PageIntro

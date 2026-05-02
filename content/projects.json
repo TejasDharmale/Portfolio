@@ -1,0 +1,52 @@
+[
+  {
+    "name": "NeuroForge - Multi-Modal AI Platform",
+    "url": "https://github.com/srushtidharmale/GPT",
+    "description": "A multi-modal AI platform with text, vision, and audio pipelines, optimized transformer blocks, and streaming responses.",
+    "tech": ["Python", "FastAPI", "Next.js", "PostgreSQL", "Redis", "Docker", "Kubernetes"],
+    "impact": "Designed for scalable real-time inference and experimentation.",
+    "category": "AI Systems",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1400&q=80",
+    "featured": true
+  },
+  {
+    "name": "RegimeAI Trading Research",
+    "url": "https://github.com/srushtidharmale/RegimeAI-Trading",
+    "description": "Research-driven algorithmic trading system to detect market regimes earlier and adapt strategy behavior.",
+    "tech": ["Python", "ML", "Time Series", "Dashboards"],
+    "impact": "Sharpe +28%, Calmar +39%, lower drawdown profile in backtests.",
+    "category": "Quant Research",
+    "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1400&q=80",
+    "featured": true
+  },
+  {
+    "name": "macOS Performance Analyzer",
+    "url": "https://github.com/srushtidharmale/macOS-Device-Performance-Analyzer-Tool",
+    "description": "Cross-stack desktop diagnostics tool using SwiftUI front-end and Python + Flask backend analysis modules.",
+    "tech": ["SwiftUI", "Python", "Flask", "SQLite"],
+    "impact": "Improved monitoring visibility with anomaly thresholds and diagnostics history.",
+    "category": "Systems",
+    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80",
+    "featured": true
+  },
+  {
+    "name": "AI Gmail Assistant",
+    "url": "https://github.com/srushtidharmale/Gmail-Assistant",
+    "description": "Automated Gmail triage and contextual response generation with calendar and contact integration.",
+    "tech": ["Python", "OpenAI API", "Gmail API", "OAuth"],
+    "impact": "Reduced manual email classification and repetitive reply drafting.",
+    "category": "AI Automation",
+    "image": "https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&w=1400&q=80",
+    "featured": false
+  },
+  {
+    "name": "Smart Grid Anomaly Detection",
+    "url": "https://github.com/srushtidharmale/CMSC678_Project",
+    "description": "Electricity theft detection using ensemble ML and sequential models for robust utility security analysis.",
+    "tech": ["TensorFlow", "LSTM", "XGBoost", "Scikit-learn"],
+    "impact": "Reached up to 91% accuracy for fraud pattern detection.",
+    "category": "ML Security",
+    "image": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=1400&q=80",
+    "featured": false
+  }
+]

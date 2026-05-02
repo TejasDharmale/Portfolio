@@ -1,7 +1,9 @@
 import PageIntro from "@/components/PageIntro";
-import { education } from "@/lib/data";
+import { getEducation } from "@/lib/content";
 
-export default function EducationPage() {
+export default async function EducationPage() {
+  const education = await getEducation();
+
   return (
     <>
       <PageIntro

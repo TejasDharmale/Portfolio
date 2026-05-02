@@ -1,11 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, ExternalLink } from "lucide-react";
-import { profile } from "@/lib/data";
+import { getProfile } from "@/lib/content";
 import Typewriter from "@/components/Typewriter";
-import heroImage from "./assest/image2.png";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const profile = await getProfile();
+
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────────── */}
@@ -32,11 +33,12 @@ export default function HomePage() {
 
         <div className="lp-hero-img">
           <Image
-            src={heroImage}
-            alt="Srushti Dharmale"
+            src={profile.heroImage}
+            alt={profile.name}
             fill
             priority
             style={{ objectFit: "cover" }}
+            sizes="(max-width: 850px) 100vw, 50vw"
           />
           <div className="lp-img-overlay" />
         </div>

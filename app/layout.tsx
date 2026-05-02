@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Fraunces } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import SiteShell from "@/components/SiteShell";
+import { getProfile } from "@/lib/content";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -20,14 +20,21 @@ export const metadata: Metadata = {
     "Portfolio of Srushti Dharmale, PhD researcher and AI engineer focused on applied intelligence and production systems.",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const profile = await getProfile();
+
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${fraunces.variable}`}>
       <body>
         <div className="aurora" aria-hidden="true" />
-        <Navbar />
-        <main className="container page-main">{children}</main>
-        <Footer />
+        <SiteShell
+          name={profile.name}
+          linkedin={profile.linkedin}
+          github={profile.github}
+          scholar={profile.scholar}
+        >
+          {children}
+        </SiteShell>
       </body>
     </html>
   );

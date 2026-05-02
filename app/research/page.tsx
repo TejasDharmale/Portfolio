@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
-import { publications, profile } from "@/lib/data";
+import { getPublications, getProfile } from "@/lib/content";
 
-export default function ResearchPage() {
+export default async function ResearchPage() {
+  const [publications, profile] = await Promise.all([getPublications(), getProfile()]);
+
   return (
     <>
       <div className="page-intro reveal">
