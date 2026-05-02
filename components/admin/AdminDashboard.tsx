@@ -267,6 +267,7 @@ export default function AdminDashboard({ initialData }: { initialData: AllData }
                 { key: "description", label: "Description",   placeholder: "What it does…", multiline: true },
                 { key: "impact",      label: "Impact / Result", placeholder: "Measurable outcome…" },
                 { key: "category",    label: "Category",      placeholder: "AI Systems" },
+                { key: "image",       label: "Image URL",     placeholder: "https://images.unsplash.com/…" },
               ]}
               arrayFields={["tech"]}
               arrayLabels={{ tech: "Tech stack (one per line)" }}

@@ -6,7 +6,7 @@
     "tech": ["Python", "FastAPI", "Next.js", "PostgreSQL", "Redis", "Docker", "Kubernetes"],
     "impact": "Designed for scalable real-time inference and experimentation.",
     "category": "AI Systems",
-    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1400&q=80",
+    "image": "https://images.unsplash.com/photo-1677442135703-1787eea5ce01?auto=format&fit=crop&w=1400&q=80",
     "featured": true
   },
   {
@@ -26,7 +26,7 @@
     "tech": ["SwiftUI", "Python", "Flask", "SQLite"],
     "impact": "Improved monitoring visibility with anomaly thresholds and diagnostics history.",
     "category": "Systems",
-    "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80",
+    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1400&q=80",
     "featured": true
   },
   {
@@ -36,7 +36,7 @@
     "tech": ["Python", "OpenAI API", "Gmail API", "OAuth"],
     "impact": "Reduced manual email classification and repetitive reply drafting.",
     "category": "AI Automation",
-    "image": "https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&w=1400&q=80",
+    "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1400&q=80",
     "featured": false
   },
   {
